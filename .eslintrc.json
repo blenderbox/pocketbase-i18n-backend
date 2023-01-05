@@ -1,0 +1,40 @@
+{
+  "extends": ["google", "prettier"],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": ["@typescript-eslint", "prettier"],
+  "rules": {
+    "@typescript-eslint/no-unused-vars": ["error"],
+    "comma-dangle": "off",
+    "eol-last": "error",
+    "no-multiple-empty-lines": [
+      "error",
+      {
+        "max": 1,
+        "maxBOF": 0,
+        "maxEOF": 1
+      }
+    ],
+    "no-trailing-spaces": "error",
+    "no-unused-vars": "off",
+    "prefer-arrow-callback": "error",
+    "prefer-const": "error",
+    "prettier/prettier": "error",
+    "quotes": [
+      "error",
+      "double",
+      {
+        "avoidEscape": true
+      }
+    ],
+    "require-jsdoc": "off",
+    "semi": ["error", "always"],
+    "valid-jsdoc": "off"
+  }
+}
